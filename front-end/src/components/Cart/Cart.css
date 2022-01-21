@@ -1,0 +1,43 @@
+.haiii{
+
+    margin-top:10%;
+    margin-left: 10%;
+    margin: 5% auto;
+    width: 30%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    height: 600px;
+    background-color: rgb(216, 124, 124);
+}
+
+.header{
+    margin-top:10%;
+    color: azure;
+}
+
+.items{
+    color: azure;
+    display: center;
+}
+
+.selectie{
+    background-color: rgb(216, 124, 124);
+    color:azure;
+}
+
+.buttonCart{
+    width: 80%;
+    height: 50px;
+    margin-top: 360px;
+    margin-left: 45px;
+    border-radius: 2px;
+    background: linear-gradient(
+      90deg,
+      rgba(93, 115, 128, 0.76) 0%,
+      rgb(33, 156, 158) 100%
+    );
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+}

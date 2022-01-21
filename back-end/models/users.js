@@ -7,17 +7,13 @@ module.exports = (sequelize, DataTypes) => {
           primaryKey:true,
           autoIncrement:true
         },
-        name: {
+        username:{
+          type: DataTypes.STRING,
+          allowNull:false,
+        },
+        password: {
           type: DataTypes.STRING,
           allowNull: false,
-        },
-        surname: {
-          type: DataTypes.STRING,
-          allowNull: false,
-        },
-        age:{
-            type:DataTypes.INTEGER,
-            allowNull:false,
         },
         email: {
           type: DataTypes.STRING,
@@ -25,11 +21,12 @@ module.exports = (sequelize, DataTypes) => {
         },
 
       },
+
       {
         freezeTableName: true,
         timestamps:false
       }
+      
     );
     return Users;
  };
-  

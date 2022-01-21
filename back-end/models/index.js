@@ -25,6 +25,10 @@ fs
     db[model.name] = model;
   });
 
+  db.Users.hasMany(db.Products, {foreignKey: {name:"id",allowNull:false}});
+  db.Users.belongsToMany(db.Friends, {through:'Friendship'});
+  db.Friends.belongsToMany(db.Users, {through:'Friendship'});
+
 Object.keys(db).forEach(modelName => {
   if (db[modelName].associate) {
     db[modelName].associate(db);
@@ -34,4 +38,4 @@ Object.keys(db).forEach(modelName => {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
-module.exports = db;
+module.exports = db;  
